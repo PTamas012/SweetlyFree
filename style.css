@@ -1,0 +1,176 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #222; /* A logó sötét hátteréhez igazodva */
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px;
+    align-items: start;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    header {
+        padding: 10px;
+    }
+    .logo {
+        max-width: 100px;
+    }
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card, .card li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* kisebb kép a kokuszkocka link eléréséhez */
+.small-image {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#kokuszkocka, .recipe-details {
+    padding: 40px 20px;
+    background: #fffaf0;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto 0;
+    border: 1px solid #f1d8b0;
+    border-radius: 12px;
+}
+
+/* eltünteti fogdíjakon a listajeleket és számozást */
+ul, ol {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+section#kokuszkocka ul,
+section#kokuszkocka ol,
+section#piskotatekercs ul,
+section#piskotatekercs ol,
+section#linzer ul,
+section#linzer ol {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+#kokuszkocka[hidden] {
+    display: none;
+}
+
+.recipe-toggle-btn {
+    margin-top: 20px;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 8px 20px rgba(0, 0, 0, 0.22);
+    transition: all 0.25s ease;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.recipe-toggle-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.recipe-toggle-btn:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+#kokuszkocka h2 {
+    margin-top: 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}

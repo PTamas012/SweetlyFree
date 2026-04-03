@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetly Free - Mentes Édességek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Sweetly Free Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Főoldal</a></li>
+                <li><a href="#gallery">Termékek</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Élvezd az ízeket korlátok nélkül!</h1>
+        <p>100% glutén- és tejmentes kézműves finomságok.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Kínálatunk</h2>
+        <div class="grid" id="image-container">
+            <div class="card">
+                <h3>Kókuszkocka</h3>
+                <li><img data-target="kokuszkocka" class="small-image recipe-image" src="kokuszkocka.png" alt="Kókuszkocka"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="kokuszkocka">Mutasd a receptet</button>
+                <div class="recipe-details" id="kokuszkocka" hidden>
+                    <h2>Kókuszkocka recept</h2>
+                    <p>Ez egy egyszerű, finom, tejmentes kókuszkocka recept.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul>
+                        <li>2 csésze kókuszreszelék</li>
+                        <li>1 csésze zabpehely</li>
+                        <li>1/2 csésze kókuszzsír</li>
+                        <li>1/2 csésze juharszirup</li>
+                        <li>2 evőkanál kakaópor (opcionális)</li>
+                        <li>csipet só</li>
+                    </ul>
+                    <h3>Elkészítés</h3>
+                    <ol>
+                        <li>A kókuszzsírt felolvasztjuk és elkeverjük a juharsziruppal.</li>
+                        <li>Hozzáadjuk a kókuszreszeléket, zabpelyhet és a csipet sót.</li>
+                        <li>Ha szeretnéd, kakaóport is keverhetsz bele.</li>
+                        <li>Nyomkodd egy sütőpapírral bélelt formába, és hűtsd dermedésig.</li>
+                        <li>Szeleteld fel és tálald.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Piskótatekercs</h3>
+                <li><img data-target="piskotatekercs" class="small-image recipe-image" src="Piskotatekercs.png" alt="Piskótatekercs"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="piskotatekercs">Mutasd a receptet</button>
+                <div class="recipe-details" id="piskotatekercs" hidden>
+                    <h2>Piskótatekercs recept</h2>
+                    <p>Hozzávalók és elkészítés klasszikus piskótatekercshez.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul>
+                        <li>4 tojás</li>
+                        <li>4 evőkanál cukor</li>
+                        <li>4 evőkanál liszt</li>
+                        <li>1 teáskanál sütőpor</li>
+                        <li>bármilyen lekvár/krém töltelék</li>
+                    </ul>
+                    <h3>Elkészítés</h3>
+                    <ol>
+                        <li>Verjük fel a tojást cukorral parádés habbá.</li>
+                        <li>Óvatosan keverjük bele a lisztet és sütőport.</li>
+                        <li>Simítsuk egy sütőpapírral bélelt tepsibe, 180°C-on süssük 8-10 percig.</li>
+                        <li>Szórjuk meg cukorral, fordítsuk a konyharuhára, tekerjük fel a töltelékkel.</li>
+                        <li>Hűtve szeleteljük.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Linzer</h3>
+                <li><img data-target="linzer" class="small-image recipe-image" src="linzer.png" alt="Linzer"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="linzer">Mutasd a receptet</button>
+                <div class="recipe-details" id="linzer" hidden>
+                    <h2>Linzer recept</h2>
+                    <p>Egyszerű szélsebes linzer, mandulaaromával.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul>
+                        <li>25 dkg liszt</li>
+                        <li>15 dkg vaj</li>
+                        <li>10 dkg porcukor</li>
+                        <li>1 tojássárgája</li>
+                        <li>vanília + reszelt citromhéj</li>
+                        <li>lekvár a töltéshez</li>
+                    </ul>
+                    <h3>Elkészítés</h3>
+                    <ol>
+                        <li>Gyorsan gyúrjuk össze a hozzávalókat tésztává.</li>
+                        <li>Hűtsük 30 percig, majd lisztezett felületen nyújtsuk ki.</li>
+                        <li>Szúrjuk ki formákat, 180°C-on 10-12 perc alatt süssük.</li>
+                        <li>Hűlés után kenjük lekvárral, helyezzük össze őket.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sweetly Free - Mindenmentes Élvezet</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const recipeSections = document.querySelectorAll('.recipe-details');
+            const imageButtons = document.querySelectorAll('.recipe-image, .recipe-toggle-btn');
+
+            function hideAllRecipes() {
+                recipeSections.forEach(section => {
+                    section.hidden = true;
+                });
+            }
+
+            function updateButtons() {
+                document.querySelectorAll('.recipe-toggle-btn').forEach(btn => {
+                    const targetId = btn.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    btn.textContent = targetSection && !targetSection.hidden ? 'Recept elrejtése' : 'Mutasd a receptet';
+                });
+            }
+
+            function toggleRecipeById(targetId) {
+                const targetSection = document.getElementById(targetId);
+                if (!targetSection) return;
+
+                const hiddenState = targetSection.hidden;
+                hideAllRecipes();
+                if (hiddenState) {
+                    targetSection.hidden = false;
+                }
+                updateButtons();
+            }
+
+            imageButtons.forEach(item => {
+                item.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    if (!targetId) return;
+                    toggleRecipeById(targetId);
+                });
+            });
+
+            hideAllRecipes();
+            updateButtons();
+        });
+    </script>
+
+</body>
+</html>
