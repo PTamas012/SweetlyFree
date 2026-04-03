@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweetly Free - Mentes Édességek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,11 +18,15 @@
                 <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
+        <div class="social-links">
+            <a href="https://www.instagram.com/sweetlyfree_eletmod/#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@sweetlyfree_eletmod?lang=en-GB" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
     </header>
 
     <section id="home">
         <h1>Élvezd az ízeket korlátok nélkül!</h1>
-        <p>100% glutén- és tejmentes kézműves finomságok.</p>
+        <p>Sweetly Free, ahol az édes ízek nem járnak lemondással.</p>
     </section>
 
     <section id="gallery">
@@ -29,7 +34,7 @@
         <div class="grid" id="image-container">
             <div class="card">
                 <h3>Kókuszkocka</h3>
-                <li><img data-target="kokuszkocka" class="small-image recipe-image" src="kokuszkocka.png" alt="Kókuszkocka"></li>
+                <li><img data-target="kokuszkocka" class="small-image recipe-image" src="kokuszkocka.JPEG" alt="Kókuszkocka"></li>
                 <button class="recipe-toggle-btn" type="button" data-target="kokuszkocka">Mutasd a receptet</button>
                 <div class="recipe-details" id="kokuszkocka" hidden>
                     <h2>Kókuszkocka recept</h2>
@@ -54,33 +59,8 @@
                 </div>
             </div>
             <div class="card">
-                <h3>Piskótatekercs</h3>
-                <li><img data-target="piskotatekercs" class="small-image recipe-image" src="Piskotatekercs.png" alt="Piskótatekercs"></li>
-                <button class="recipe-toggle-btn" type="button" data-target="piskotatekercs">Mutasd a receptet</button>
-                <div class="recipe-details" id="piskotatekercs" hidden>
-                    <h2>Piskótatekercs recept</h2>
-                    <p>Hozzávalók és elkészítés klasszikus piskótatekercshez.</p>
-                    <h3>Hozzávalók</h3>
-                    <ul>
-                        <li>4 tojás</li>
-                        <li>4 evőkanál cukor</li>
-                        <li>4 evőkanál liszt</li>
-                        <li>1 teáskanál sütőpor</li>
-                        <li>bármilyen lekvár/krém töltelék</li>
-                    </ul>
-                    <h3>Elkészítés</h3>
-                    <ol>
-                        <li>Verjük fel a tojást cukorral parádés habbá.</li>
-                        <li>Óvatosan keverjük bele a lisztet és sütőport.</li>
-                        <li>Simítsuk egy sütőpapírral bélelt tepsibe, 180°C-on süssük 8-10 percig.</li>
-                        <li>Szórjuk meg cukorral, fordítsuk a konyharuhára, tekerjük fel a töltelékkel.</li>
-                        <li>Hűtve szeleteljük.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="card">
                 <h3>Linzer</h3>
-                <li><img data-target="linzer" class="small-image recipe-image" src="linzer.png" alt="Linzer"></li>
+                <li><img data-target="linzer" class="small-image recipe-image" src="linzer.JPEG" alt="Linzer"></li>
                 <button class="recipe-toggle-btn" type="button" data-target="linzer">Mutasd a receptet</button>
                 <div class="recipe-details" id="linzer" hidden>
                     <h2>Linzer recept</h2>
@@ -103,11 +83,154 @@
                     </ol>
                 </div>
             </div>
+            <div class="card">
+                <h3>Vegán Nutellás Christmas Cookies</h3>
+                <li><img data-target="vegan-nutellas-christmas-cookies" class="small-image recipe-image" src="vegan_nutellas_christmas_cookies.jpg" alt="Vegan Nutellas Christmas Cookies"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="vegan-nutellas-christmas-cookies">Mutasd a receptet</button>
+                <div class="recipe-details" id="vegan-nutellas-christmas-cookies" hidden>
+                    <h2>Vegán Nutellás Christmas Cookies recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Csokimuffin</h3>
+                <li><img data-target="csokis-muffin" class="small-image recipe-image" src="csokis_muffin.JPEG" alt="Csokis Muffin"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="csokis-muffin">Mutasd a receptet</button>
+                <div class="recipe-details" id="csokis-muffin" hidden>
+                    <h2>Csokimuffin recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+                        <div class="card">
+                <h3>Vaníliás-Meggyes muffin</h3>
+                <li><img data-target="meggyes-muffin" class="small-image recipe-image" src="meggyes_muffin.jpg" alt="Meggyes Muffin"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="meggyes-muffin">Mutasd a receptet</button>
+                <div class="recipe-details" id="meggyes-muffin" hidden>
+                    <h2>Vaníliás-Meggyes muffin recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Piskótatekercs</h3>
+                <li><img data-target="piskota-tekercs" class="small-image recipe-image" src="piskota_tekercs.JPEG" alt="Piskóta Tekercs"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="piskota-tekercs">Mutasd a receptet</button>
+                <div class="recipe-details" id="piskota-tekercs" hidden>
+                    <h2>Piskótatekercs recept</h2>
+                    <p>Hozzávalók és elkészítés klasszikus piskótatekercshez.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul>
+                        <li>4 tojás</li>
+                        <li>4 evőkanál cukor</li>
+                        <li>4 evőkanál liszt</li>
+                        <li>1 teáskanál sütőpor</li>
+                        <li>bármilyen lekvár/krém töltelék</li>
+                    </ul>
+                    <h3>Elkészítés</h3>
+                    <ol>
+                        <li>Verjük fel a tojást cukorral parádés habbá.</li>
+                        <li>Óvatosan keverjük bele a lisztet és sütőport.</li>
+                        <li>Simítsuk egy sütőpapírral bélelt tepsibe, 180°C-on süssük 8-10 percig.</li>
+                        <li>Szórjuk meg cukorral, fordítsuk a konyharuhára, tekerjük fel a töltelékkel.</li>
+                        <li>Hűtve szeleteljük.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Pumpkin Spice piskótatekercs</h3>
+                <li><img data-target="pumpkin-spice-piskotatekercs" class="small-image recipe-image" src="pumpkin_spice_piskotatekercs.JPEG" alt="Pumpkin Spice Piskótatekercs"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="pumpkin-spice-piskotatekercs">Mutasd a receptet</button>
+                <div class="recipe-details" id="pumpkin-spice-piskotatekercs" hidden>
+                    <h2>Pumpkin Spice piskótatekercs recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Mézeskalácsos babka</h3>
+                <li><img data-target="img-8606" class="small-image recipe-image" src="IMG_8606.JPEG" alt="Egyedi Süti"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="img-8606">Mutasd a receptet</button>
+                <div class="recipe-details" id="img-8606" hidden>
+                    <h2>Mézeskalácsos babka recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Citromos torta</h3>
+                <li><img data-target="citromos-torta" class="small-image recipe-image" src="citromos_torta.jpg" alt="Citromos Torta"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="citromos-torta">Mutasd a receptet</button>
+                <div class="recipe-details" id="citromos-torta" hidden>
+                    <h2>Citromos torta recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Répatorta</h3>
+                <li><img data-target="repa-torta" class="small-image recipe-image" src="repa_torta.JPEG" alt="Repa Torta"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="repa-torta">Mutasd a receptet</button>
+                <div class="recipe-details" id="repa-torta" hidden>
+                    <h2>Répatorta recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Fonott kalács</h3>
+                <li><img data-target="kalacs" class="small-image recipe-image" src="kalacs.jpg" alt="Kalacs"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="kalacs">Mutasd a receptet</button>
+                <div class="recipe-details" id="kalacs" hidden>
+                    <h2>Fonott kalács recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Márványos kuglóf</h3>
+                <li><img data-target="kuglof" class="small-image recipe-image" src="kuglof.JPEG" alt="Kuglof"></li>
+                <button class="recipe-toggle-btn" type="button" data-target="kuglof">Mutasd a receptet</button>
+                <div class="recipe-details" id="kuglof" hidden>
+                    <h2>Márványos kuglóf recept</h2>
+                    <p>Recept részletek hamarosan.</p>
+                    <h3>Hozzávalók</h3>
+                    <ul><li>Hozzávalók listája</li></ul>
+                    <h3>Elkészítés</h3>
+                    <ol><li>Lépések</li></ol>
+                </div>
+            </div>   
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Sweetly Free - Mindenmentes Élvezet</p>
+        <p>&copy; 2026 Sweetly Free</p>
     </footer>
 
     <script>
